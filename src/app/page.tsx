@@ -5,10 +5,10 @@ import React, { useState, useEffect } from "react";
 interface PageProps {}
 
 const Page: React.FC<PageProps> = () => {
-  const [usernames, setUsernames] = useState([]);
+  const [usernames, setUsernames] = useState<string[]>([]);
 
   useEffect(() => {
-    const randomUsernames = [
+    const randomUsernames: string[] = [
       "user123",
       "john_doe",
       "alice123",
